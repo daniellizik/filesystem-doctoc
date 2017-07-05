@@ -47,4 +47,5 @@ another folder
 ## roadmap
 
 - add cli
+- add webpack plugin
 - add ordering config, to override default ordering of bullet items per folder
