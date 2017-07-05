@@ -1,4 +1,4 @@
-Other table of contents generators take a single readme file. What if you have several readmes, or many? You can use `filetree-doctoc` to join many readme files in your filesystem tree into a single .md file with a table of contents that matches your file structure.
+You can use `filetree-doctoc` to join many readme files in a directory into a single .md file with a table of contents that matches your file structure.
 
 For now, it only supports github-flavor markdown.
 
@@ -14,3 +14,8 @@ fileSystemDocToc({
   output: `${__dirname}/docs/dist/index.md`
 })
 ```
+
+## roadmap
+
+- add cli
+- add ordering config, to override default ordering of bullet items per folder
