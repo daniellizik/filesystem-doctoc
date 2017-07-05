@@ -31,8 +31,8 @@ export const walk = (branch, order, pathPart, bucket = {toc: [], md: []}, depth 
     const header = new Array(depth + 1).fill('#').join('')
     if (isFolder) {
       const nextAcc = {
-        md: [...acc.md, writeLine(depth, name, (indent, title, href) => `${header} ${href}`)],
-        toc: [...acc.toc, writeLine(depth, f)]
+        toc: [...acc.toc, writeLine(depth, f)],
+        md: [...acc.md, writeLine(depth, name, (indent, title, href) => `${header} ${title}`)]
       }
       return walk(currPath, order, f, nextAcc, depth + 1)
     } else if (ext === '.md') {
@@ -41,7 +41,7 @@ export const walk = (branch, order, pathPart, bucket = {toc: [], md: []}, depth 
         toc: [...acc.toc, writeLine(depth, name)],
         md: [
           ...acc.md,
-          writeLine(depth, name, (indent, title, href) => `${header} ${href}\n${md}\n`)
+          writeLine(depth, name, (indent, title, href) => `${header} ${title}\n${md}\n`)
         ]
       }
     } else {
