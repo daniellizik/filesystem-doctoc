@@ -19,6 +19,7 @@ beforeEach(() => {
 
 describe('doc toc generator', () => {
   const tree = walk(`${__dirname}/fixture`)
+  console.log(tree.toc)
   it('should gather folders and files', () => {
     expect(tree.toc.length).toBe(16)
   })
