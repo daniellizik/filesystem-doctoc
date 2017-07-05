@@ -19,12 +19,11 @@ beforeEach(() => {
 
 describe('doc toc generator', () => {
   const tree = walk(`${__dirname}/fixture`)
-  console.log(tree.toc)
   it('should gather folders and files', () => {
-    expect(tree.toc.length).toBe(16)
+    expect(tree.toc.length).toBe(14)
   })
   it('should concat file contents', () => {
-    expect(tree.md.length).toBe(16)
+    expect(tree.md.length).toBe(14)
   })
   it('should not alter file or folder titles, only anchors', () => {
     expect(writeLine(1, 'foo bar')).toBe('* [foo bar](#foo-bar)')

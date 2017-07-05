@@ -1,5 +1,4 @@
 * [a](#a)
-  * [a-a](#a-a)
   * [a-b](#a-b)
     * [fish](#fish)
     * [level 3](#level-3)
@@ -8,7 +7,6 @@
   * [dog](#dog)
 * [b](#b)
   * [blah](#blah)
-* [c](#c)
 * [d](#d)
   * [d-a](#d-a)
 * [root](#root)
@@ -16,7 +14,6 @@
   * [a file](#a-file)
 
 ## a
-### a-a
 ### a-b
 #### fish
 fish file
@@ -35,7 +32,6 @@ dogs
 ### blah
 something!
 
-## c
 ## d
 ### d-a
 da da da
