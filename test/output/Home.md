@@ -1,5 +1,5 @@
 * [a](#a)
-  * [a-b](#a-b)
+  * [a b](#a-b)
     * [fish](#fish)
     * [level 3](#level-3)
       * [third level file](#third-level-file)
@@ -8,18 +8,18 @@
 * [b](#b)
   * [blah](#blah)
 * [d](#d)
-  * [d-a](#d-a)
+  * [d a](#d-a)
 * [root](#root)
 * [some folder](#some-folder)
-  * [a file](#a-file)
+  * [some file](#some-file)
 
 ## a
-### a-b
+### a b
 #### fish
 fish file
 
-#### level-3
-##### third-level-file
+#### level 3
+##### third level file
 lfkajsdfl
 
 ### cat
@@ -33,7 +33,7 @@ dogs
 something!
 
 ## d
-### d-a
+### d a
 da da da
 
 ## root
@@ -41,6 +41,6 @@ da da da
 
 root level md!
 
-## some-folder
-### a-file
+## some folder
+### some file
 filename with spaces
