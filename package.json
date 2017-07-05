@@ -1,0 +1,17 @@
+{
+  "name": "filesystem-doctoc",
+  "version": "1.0.0",
+  "description": "Make documentation from filetree",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "set NODE_ENV=test&&jest",
+    "build": "set NODE_ENV=production&&babel -d ./dist ./src"
+  },
+  "author": "Daniel Lizik",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^20.0.4"
+  }
+}

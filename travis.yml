@@ -1,0 +1,19 @@
+# staging build
+
+branches:
+  only:
+    - dev
+
+language: node_js
+
+node_js:
+  - "6.9.4"
+
+install:
+  - npm i
+
+script:
+  - npm run test
+
+after_success:
+  - npm run build
