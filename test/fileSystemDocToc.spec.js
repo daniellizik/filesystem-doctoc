@@ -36,7 +36,14 @@ describe('doc toc generator', () => {
     expect(writeLine(3, 'x')).toBe('    * [x](#x)')
   })
   it('should respect header levels', () => {
-    expect(tree.md.toString().indexOf('### third-level-file')).toBeGreaterThan(-1)
+    expect(tree.md.toString().indexOf('### third level file')).toBeGreaterThan(-1)
+  })
+  it('should not add hyphen to headers in md section', () => {
+    const index = s => tree.md.join('').indexOf(s)
+    expect(index('some folder')).toBeGreaterThan(-1)
+    expect(index('some file')).toBeGreaterThan(-1)
+    expect(index('some-folder')).toBe(-1)
+    expect(index('some-file')).toBe(-1)
   })
 })
 
