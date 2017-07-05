@@ -1,13 +1,1 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _fileSystemDocToc = require('./fileSystemDocToc');
-
-var _fileSystemDocToc2 = _interopRequireDefault(_fileSystemDocToc);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = _fileSystemDocToc2.default;
+'use strict';Object.defineProperty(exports,'__esModule',{value:!0});var _fileSystemDocToc=require('./fileSystemDocToc'),_fileSystemDocToc2=_interopRequireDefault(_fileSystemDocToc);function _interopRequireDefault(a){return a&&a.__esModule?a:{default:a}}exports.default=_fileSystemDocToc2.default;

@@ -5,7 +5,7 @@ For now, it only supports github-flavor markdown.
 ## api
 
 ```js
-import fileSystemDocToc from 'filesystem-doctoc`
+import fileSystemDocToc from 'filesystem-doctoc'
 
 fileSystemDocToc({
   // should be a file that serves as the root of your docs directory
