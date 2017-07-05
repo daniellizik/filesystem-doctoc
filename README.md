@@ -15,6 +15,35 @@ fileSystemDocToc({
 })
 ```
 
+## example
+
+```yaml
+some folder
+  some file.md
+another folder
+  a.md
+  nested folder
+    child.md
+```
+
+```md
+* [some folder](#some-folder)
+  * [some file](#some-file)
+* [another folder](#another-folder)
+  * [a](#a)
+  * [nested folder](#nested-folder)
+    * [child](#child)
+
+# some folder
+<some file.md contents>
+
+# another folder
+<a.md contents>
+
+## nested folder
+<child.md contents>
+```
+
 ## roadmap
 
 - add cli
